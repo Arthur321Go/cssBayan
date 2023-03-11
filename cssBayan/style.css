@@ -4,17 +4,56 @@
 }
 
 body {
-    margin: 0px;
+    margin: 0em;
     background-image: url(../cssBayan/images/5506002.jpg);
     background-size: cover;
 }
 
-.mainBlock {
-    width: 500px;
-    height: 800px;
+.memes_stack {
+    width: 70em;
+    height: 50em;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     color: rgb(247, 193, 254);
-    font-family:'PermanentMarker-Regular'
+    font-family:'PermanentMarker-Regular';
+}
+
+.meme_pic_1 {
+    background-image: url(../cssBayan/images/memes/meme1.png);
+    margin: auto;
+    width:48rem;
+    height:24rem;
+    opacity: 0.97;
+}
+
+.meme_pic_2 {
+    background-image: url(../cssBayan/images/memes/meme2.png);
+    margin: auto;
+    width:34rem;
+    height: 44rem;
+    opacity: 0.97;
+}
+
+.meme_pic_3 {
+    background-image: url(../cssBayan/images/memes/meme3.png);
+    margin: auto;
+    width:22.3rem;
+    height:39rem;
+    opacity: 0.97;
+}
+
+.meme_pic_4 {
+    background-image: url(../cssBayan/images/memes/meme4.png);
+    margin: auto;
+    width:38rem;
+    height:28.8rem;
+    opacity: 0.97;
+}
+
+.meme_pic_5 {
+    background-image: url(../cssBayan/images/memes/meme5.png);
+    margin: auto;
+    width:46.6rem;
+    height:30.75rem;
+    opacity: 0.97;
 }
