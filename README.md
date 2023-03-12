@@ -1,1 +1,1 @@
-https://Arthur321Go.github.io/cssBayan/cssBayan/index.html
+https://arthur321go.github.io/cssBayan/cssBayan/index.html
