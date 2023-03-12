@@ -9,6 +9,11 @@ body {
     background-size: cover;
 }
 
+h1 {
+    color: yellow;
+    text-shadow: 0 0.1em 0.1em rgb(0, 255, 34);
+}
+
 .memes_stack {
     width: 70em;
     height: 50em;
@@ -20,40 +25,128 @@ body {
 
 .meme_pic_1 {
     background-image: url(../cssBayan/images/memes/meme1.png);
-    margin: auto;
+    margin: 0.8rem auto;
     width:48rem;
     height:24rem;
-    opacity: 0.97;
+    opacity: 0.95;
 }
 
 .meme_pic_2 {
     background-image: url(../cssBayan/images/memes/meme2.png);
-    margin: auto;
+    margin: 0.8rem auto;
     width:34rem;
+    height: 0rem;
+    opacity: 0.95;
+    visibility: hidden;
+}
+
+label:hover + .meme_pic_2 {
     height: 44rem;
-    opacity: 0.97;
+    visibility: visible;
+    transition: 1s ease-in-out 0.1s;
 }
 
 .meme_pic_3 {
     background-image: url(../cssBayan/images/memes/meme3.png);
-    margin: auto;
+    margin: 0.8rem auto;
     width:22.3rem;
+    height:0rem;
+    opacity: 0.95;
+    visibility: hidden;
+}
+
+label:hover + .meme_pic_3 {
     height:39rem;
-    opacity: 0.97;
+    visibility: visible;
+    transition: 1s;
 }
 
 .meme_pic_4 {
     background-image: url(../cssBayan/images/memes/meme4.png);
-    margin: auto;
+    margin: 0.8rem auto;
     width:38rem;
+    height:0rem;
+    opacity: 0.95;
+    visibility: hidden;
+}
+
+label:hover + .meme_pic_4 {
     height:28.8rem;
-    opacity: 0.97;
+    visibility: visible;
+    transition: 1s;
 }
 
 .meme_pic_5 {
     background-image: url(../cssBayan/images/memes/meme5.png);
-    margin: auto;
-    width:46.6rem;
+    margin: 0.8rem auto;
+    width: 46.6rem;
+    height: 0;
+    opacity: 0.95;
+    visibility: hidden;
+}
+
+label:hover + .meme_pic_5 {
     height:30.75rem;
-    opacity: 0.97;
+    visibility: visible;
+    transition: 1s;
+}
+
+input:checked + .meme_pic_5 {
+  appearance: auto;
+}
+
+.meme_container label {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+label:hover {
+  padding: 3px 50px;
+  color: yellow;
+  transition: 0.5s;
+  background-color: rgb(72, 0, 255);
+  border-radius: 3rem/3rem;
+  text-shadow: 0 0.1em rgb(0, 255, 34);
+}
+
+@keyframes emoji_animation {
+    0% {
+      color: rgb(0, 255, 238);
+    }
+
+    50% {
+      color: rgb(217, 0, 255);
+    }
+
+    100% {
+      color: rgb(0, 255, 238);
+    }
+  }
+
+.emoji_animation {
+    animation: emoji_animation 2s infinite;
+    text-shadow: none;
+}
+
+.emoji {
+    color: white;
+    text-shadow: none;
+}
+
+.emoji_2 {
+    padding: 3em 0;
+    color: white;
+}
+
+input {
+    appearance: none;
+
+}
+
+label:before {
+    content: '\279C';
+}
+
+.normalText {
+  text-shadow: none;
 }
