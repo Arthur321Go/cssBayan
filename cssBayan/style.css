@@ -1,3 +1,33 @@
+/* пиксели используются только в медиа запросах, данные взяты из условия задания*/
+
+@media (max-width: 1920px) {
+    h1 {
+        max-width: 92%;
+    }
+    .meme_container {
+        max-width: 92%;
+    }
+}
+
+@media (max-width: 820px) {
+    h1 {
+        max-width: 92%;
+    }
+    .meme_container {
+        max-width: 92%;
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        max-width: 92%;
+    }
+
+    .meme_container {
+        max-width: 92%;
+    }
+}
+
 @font-face {
     font-family:'PermanentMarker-Regular';
     src: url(../cssBayan/fonts/PermanentMarker-Regular.ttf);
@@ -27,8 +57,23 @@ h1 {
     background-image: url(../cssBayan/images/memes/meme1.png);
     margin: 0.8rem auto;
     width:48rem;
-    height:24rem;
+    height:0rem;
     opacity: 0.95;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+label:hover + .meme_pic_1 {
+    height: 24rem;
+    visibility: visible;
+    transition: 1s ease-in-out 0.1s;
+}
+
+input:checked + label + .meme_pic_1 {
+    height:24rem;
+    visibility: visible;
+    transition: 1s;
+    cursor: pointer;
 }
 
 .meme_pic_2 {
@@ -38,12 +83,20 @@ h1 {
     height: 0rem;
     opacity: 0.95;
     visibility: hidden;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 label:hover + .meme_pic_2 {
     height: 44rem;
     visibility: visible;
     transition: 1s ease-in-out 0.1s;
+}
+
+input:checked + label + .meme_pic_2 {
+    height:44rem;
+    visibility: visible;
+    transition: 1s;
 }
 
 .meme_pic_3 {
@@ -53,9 +106,18 @@ label:hover + .meme_pic_2 {
     height:0rem;
     opacity: 0.95;
     visibility: hidden;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 label:hover + .meme_pic_3 {
+    height:39rem;
+    visibility: visible;
+    transition: 1s;
+    
+}
+
+input:checked + label + .meme_pic_3 {
     height:39rem;
     visibility: visible;
     transition: 1s;
@@ -68,9 +130,17 @@ label:hover + .meme_pic_3 {
     height:0rem;
     opacity: 0.95;
     visibility: hidden;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 label:hover + .meme_pic_4 {
+    height:28.8rem;
+    visibility: visible;
+    transition: 1s;
+}
+
+input:checked + label + .meme_pic_4 {
     height:28.8rem;
     visibility: visible;
     transition: 1s;
@@ -83,6 +153,8 @@ label:hover + .meme_pic_4 {
     height: 0;
     opacity: 0.95;
     visibility: hidden;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 label:hover + .meme_pic_5 {
@@ -91,8 +163,10 @@ label:hover + .meme_pic_5 {
     transition: 1s;
 }
 
-input:checked + .meme_pic_5 {
-  appearance: auto;
+input:checked + label + .meme_pic_5 {
+    height:30.75rem;
+    visibility: visible;
+    transition: 1s;
 }
 
 .meme_container label {
@@ -101,7 +175,7 @@ input:checked + .meme_pic_5 {
 }
 
 label:hover {
-  padding: 3px 50px;
+  padding: 0.188rem 3.125rem;
   color: yellow;
   transition: 0.5s;
   background-color: rgb(72, 0, 255);
@@ -134,13 +208,12 @@ label:hover {
 }
 
 .emoji_2 {
-    padding: 3em 0;
+    padding: 50em 0 5em 0;
     color: white;
 }
 
 input {
     appearance: none;
-
 }
 
 label:before {
